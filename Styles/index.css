@@ -1,0 +1,6 @@
+@import url(global.css);
+
+@import url(desktop/desktop.css);
+@import url(desktop/tittle-bar.css);
+
+@import url(taskbar/taskbar.css);
