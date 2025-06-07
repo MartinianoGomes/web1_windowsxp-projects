@@ -1,0 +1,12 @@
+.desktop {
+    display: flex;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100dvw;
+
+    /* Cálculo de 100% da altura da tela inteira menos a altura da taskbar */
+    height: calc(100% - 40px);
+}
