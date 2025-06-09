@@ -1,0 +1,20 @@
+.window {
+    position: absolute;
+
+    width: 800px;
+    height: 600px;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+.title-bar {
+    padding: 14px 10px;
+}
+
+.window-body h1 {
+    font-size: 20px;
+    color: #000;
+}
