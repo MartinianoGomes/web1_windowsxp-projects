@@ -1,8 +1,11 @@
 .window {
     position: absolute;
 
-    width: 800px;
-    height: 600px;
+    width: 50%;
+    max-width: 700px;
+
+    height: 80%;
+    max-height: 500px;
 
     top: 50%;
     left: 50%;
