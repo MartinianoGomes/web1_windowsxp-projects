@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="keywords" content="Windows XP, página inicial, ícones, barra de tarefas, design retro" />
+  <meta name="author" content="Martiniano Gomes Barros Cirqueira Neto" />
+  <meta name="description"
+    content="Página inicial inspirada no Windows XP, com ícones clássicos e uma barra de tarefas estilizada." />
+
+  <link rel="shortcut icon" href="/placeholder.svg?height=32&width=32" type="image/x-icon">
+
+  <link rel="stylesheet" href="https://unpkg.com/xp.css">
+  <link rel="stylesheet" href="styles.css" />
+
+  <title>Projects - Initial Page</title>
+</head>
+
+<body>
+  <!-- Estilização da Área de Trabalho -->
+  <div class="desktop">
+    <!-- Ícones da Área de Trabalho -->
+    <div class="desktop-icon" data-window="computer" style="top: 20px; left: 20px;">
+      <img src="/placeholder.svg?height=32&width=32" alt="Meu Computador">
+      <span>Meu Computador</span>
+    </div>
+
+    <div class="desktop-icon" data-window="documents" style="top: 120px; left: 20px;">
+      <img src="/placeholder.svg?height=32&width=32" alt="Meus Documentos">
+      <span>Meus Documentos</span>
+    </div>
+
+    <div class="desktop-icon" data-window="recycle" style="top: 220px; left: 20px;">
+      <img src="/placeholder.svg?height=32&width=32" alt="Lixeira">
+      <span>Lixeira</span>
+    </div>
+
+    <div class="desktop-icon" data-window="internet" style="top: 320px; left: 20px;">
+      <img src="/placeholder.svg?height=32&width=32" alt="Internet Explorer">
+      <span>Internet Explorer</span>
+    </div>
+
+    <div class="desktop-icon" data-window="outlook" style="top: 420px; left: 20px;">
+      <img src="/placeholder.svg?height=32&width=32" alt="Outlook Express">
+      <span>Outlook Express</span>
+    </div>
+
+    <div class="desktop-icon" data-window="media" style="top: 20px; left: 120px;">
+      <img src="/placeholder.svg?height=32&width=32" alt="Windows Media Player">
+      <span>Windows Media Player</span>
+    </div>
+
+    <div class="desktop-icon" data-window="paint" style="top: 120px; left: 120px;">
+      <img src="/placeholder.svg?height=32&width=32" alt="Paint">
+      <span>Paint</span>
+    </div>
+
+    <div class="desktop-icon" data-window="notepad" style="top: 220px; left: 120px;">
+      <img src="/placeholder.svg?height=32&width=32" alt="Bloco de Notas">
+      <span>Bloco de Notas</span>
+    </div>
+
+    <!-- Janela Principal -->
+    <div id="myWindow" class="window" style="top: 100px; left: 300px;">
+      <div class="title-bar">
+        <div class="title-bar-text">Projetos</div>
+        <div class="title-bar-controls">
+          <button aria-label="Minimize" onclick="minimizeWindow('myWindow')"></button>
+          <button aria-label="Maximize" onclick="maximizeWindow('myWindow')"></button>
+          <button aria-label="Close" onclick="closeWindow('myWindow')"></button>
+        </div>
+      </div>
+      <div class="window-body">
+        <h1>Projetos - Desenvolvimento Web I</h1>
+        <p>Bem-vindo à área de trabalho do Windows XP!</p>
+        <p>Clique duas vezes nos ícones da área de trabalho para abrir os programas.</p>
+      </div>
+    </div>
+
+    <!-- Janelas dos Programas -->
+    <div id="computerWindow" class="window hidden" style="top: 150px; left: 350px;">
+      <div class="title-bar">
+        <div class="title-bar-text">Meu Computador</div>
+        <div class="title-bar-controls">
+          <button aria-label="Minimize" onclick="minimizeWindow('computerWindow')"></button>
+          <button aria-label="Maximize" onclick="maximizeWindow('computerWindow')"></button>
+          <button aria-label="Close" onclick="closeWindow('computerWindow')"></button>
+        </div>
+      </div>
+      <div class="window-body">
+        <h2>Meu Computador</h2>
+        <div class="computer-drives">
+          <div class="drive-item">
+            <img src="/placeholder.svg?height=24&width=24" alt="Disco Local">
+            <span>Disco Local (C:)</span>
+          </div>
+          <div class="drive-item">
+            <img src="/placeholder.svg?height=24&width=24" alt="CD-ROM">
+            <span>CD-ROM (D:)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="documentsWindow" class="window hidden" style="top: 200px; left: 400px;">
+      <div class="title-bar">
+        <div class="title-bar-text">Meus Documentos</div>
+        <div class="title-bar-controls">
+          <button aria-label="Minimize" onclick="minimizeWindow('documentsWindow')"></button>
+          <button aria-label="Maximize" onclick="maximizeWindow('documentsWindow')"></button>
+          <button aria-label="Close" onclick="closeWindow('documentsWindow')"></button>
+        </div>
+      </div>
+      <div class="window-body">
+        <h2>Meus Documentos</h2>
+        <p>Esta pasta está vazia.</p>
+      </div>
+    </div>
+
+    <div id="recycleWindow" class="window hidden" style="top: 250px; left: 450px;">
+      <div class="title-bar">
+        <div class="title-bar-text">Lixeira</div>
+        <div class="title-bar-controls">
+          <button aria-label="Minimize" onclick="minimizeWindow('recycleWindow')"></button>
+          <button aria-label="Maximize" onclick="maximizeWindow('recycleWindow')"></button>
+          <button aria-label="Close" onclick="closeWindow('recycleWindow')"></button>
+        </div>
+      </div>
+      <div class="window-body">
+        <h2>Lixeira</h2>
+        <p>A lixeira está vazia.</p>
+        <button class="btn">Esvaziar Lixeira</button>
+      </div>
+    </div>
+
+    <div id="internetWindow" class="window hidden" style="top: 300px; left: 500px;">
+      <div class="title-bar">
+        <div class="title-bar-text">Internet Explorer</div>
+        <div class="title-bar-controls">
+          <button aria-label="Minimize" onclick="minimizeWindow('internetWindow')"></button>
+          <button aria-label="Maximize" onclick="maximizeWindow('internetWindow')"></button>
+          <button aria-label="Close" onclick="closeWindow('internetWindow')"></button>
+        </div>
+      </div>
+      <div class="window-body">
+        <h2>Internet Explorer</h2>
+        <div class="browser-bar">
+          <label>Endereço:</label>
+          <input type="text" value="https://www.google.com" readonly>
+        </div>
+        <div class="browser-content">
+          <p>Simulação do Internet Explorer do Windows XP</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="outlookWindow" class="window hidden" style="top: 350px; left: 550px;">
+      <div class="title-bar">
+        <div class="title-bar-text">Outlook Express</div>
+        <div class="title-bar-controls">
+          <button aria-label="Minimize" onclick="minimizeWindow('outlookWindow')"></button>
+          <button aria-label="Maximize" onclick="maximizeWindow('outlookWindow')"></button>
+          <button aria-label="Close" onclick="closeWindow('outlookWindow')"></button>
+        </div>
+      </div>
+      <div class="window-body">
+        <h2>Outlook Express</h2>
+        <p>Caixa de Entrada (0 mensagens)</p>
+        <p>Nenhuma mensagem nova.</p>
+      </div>
+    </div>
+
+    <div id="mediaWindow" class="window hidden" style="top: 400px; left: 600px;">
+      <div class="title-bar">
+        <div class="title-bar-text">Windows Media Player</div>
+        <div class="title-bar-controls">
+          <button aria-label="Minimize" onclick="minimizeWindow('mediaWindow')"></button>
+          <button aria-label="Maximize" onclick="maximizeWindow('mediaWindow')"></button>
+          <button aria-label="Close" onclick="closeWindow('mediaWindow')"></button>
+        </div>
+      </div>
+      <div class="window-body">
+        <h2>Windows Media Player</h2>
+        <div class="media-controls">
+          <button class="btn">▶️ Play</button>
+          <button class="btn">⏸️ Pause</button>
+          <button class="btn">⏹️ Stop</button>
+        </div>
+        <p>Nenhuma mídia carregada.</p>
+      </div>
+    </div>
+
+    <div id="paintWindow" class="window hidden" style="top: 450px; left: 650px;">
+      <div class="title-bar">
+        <div class="title-bar-text">Paint</div>
+        <div class="title-bar-controls">
+          <button aria-label="Minimize" onclick="minimizeWindow('paintWindow')"></button>
+          <button aria-label="Maximize" onclick="maximizeWindow('paintWindow')"></button>
+          <button aria-label="Close" onclick="closeWindow('paintWindow')"></button>
+        </div>
+      </div>
+      <div class="window-body">
+        <h2>Paint</h2>
+        <div class="paint-toolbar">
+          <button class="btn">Pincel</button>
+          <button class="btn">Lápis</button>
+          <button class="btn">Borracha</button>
+        </div>
+        <div class="paint-canvas">
+          <canvas width="300" height="200" style="border: 1px solid #ccc; background: white;"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <div id="notepadWindow" class="window hidden" style="top: 500px; left: 700px;">
+      <div class="title-bar">
+        <div class="title-bar-text">Bloco de Notas</div>
+        <div class="title-bar-controls">
+          <button aria-label="Minimize" onclick="minimizeWindow('notepadWindow')"></button>
+          <button aria-label="Maximize" onclick="maximizeWindow('notepadWindow')"></button>
+          <button aria-label="Close" onclick="closeWindow('notepadWindow')"></button>
+        </div>
+      </div>
+      <div class="window-body">
+        <textarea rows="10" cols="40" placeholder="Digite seu texto aqui..."></textarea>
+      </div>
+    </div>
+  </div>
+
+  <!-- Estilização da Barra de Tarefas -->
+  <div class="taskbar">
+    <div class="start-button" onclick="toggleStartMenu()">
+      <img src="/placeholder.svg?height=16&width=16" alt="Iniciar">
+      <p>Iniciar</p>
+    </div>
+
+    <div class="taskbar-programs" id="taskbarPrograms">
+      <!-- Programas abertos aparecerão aqui -->
+    </div>
+
+    <div class="content">
+      <div class="clock" id="clock">01:52</div>
+    </div>
+  </div>
+
+  <!-- Menu Iniciar -->
+  <div id="startMenu" class="start-menu hidden">
+    <div class="start-menu-header">
+      <img src="/placeholder.svg?height=32&width=32" alt="Usuário">
+      <span>Usuário</span>
+    </div>
+    <div class="start-menu-items">
+      <div class="start-menu-item" onclick="openWindow('internetWindow')">
+        <img src="/placeholder.svg?height=16&width=16" alt="Internet">
+        Internet Explorer
+      </div>
+      <div class="start-menu-item" onclick="openWindow('outlookWindow')">
+        <img src="/placeholder.svg?height=16&width=16" alt="Email">
+        Outlook Express
+      </div>
+      <div class="start-menu-item" onclick="openWindow('mediaWindow')">
+        <img src="/placeholder.svg?height=16&width=16" alt="Media">
+        Windows Media Player
+      </div>
+      <hr>
+      <div class="start-menu-item">
+        <img src="/placeholder.svg?height=16&width=16" alt="Todos">
+        Todos os Programas
+      </div>
+      <div class="start-menu-item">
+        <img src="/placeholder.svg?height=16&width=16" alt="Executar">
+        Executar...
+      </div>
+    </div>
+    <div class="start-menu-footer">
+      <div class="start-menu-item">
+        <img src="/placeholder.svg?height=16&width=16" alt="Desligar">
+        Desligar
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
