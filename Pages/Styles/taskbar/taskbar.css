@@ -62,7 +62,7 @@
     text-shadow: 1px 2px 2px rgb(69, 76, 16), 0 0 3px rgb(69, 76, 16);
 }
 
-.start-button:hover {
+.start-button:active {
     background: linear-gradient(to right, #156615, #079607);
 }
 
