@@ -1,0 +1,14 @@
+.window {
+    position: absolute;
+
+    width: 80%;
+    max-width: 800px;
+
+    height: 80%;
+    max-height: 600px;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
