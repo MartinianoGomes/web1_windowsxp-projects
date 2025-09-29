@@ -18,15 +18,15 @@
 /* Global styles */
 
 * {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 
-    box-sizing: border-box;
+	box-sizing: border-box;
 
-    font-family: 'Tahoma', sans-serif;
+	font-family: 'Tahoma', sans-serif;
 }
 
 body {
-    background: url('../Assets/Images/homepage.jpg') no-repeat center center fixed;
-    background-size: cover;
+	background: url('../Assets/Images/homepage.jpg') no-repeat center center fixed;
+	background-size: cover;
 }
