@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="keywords" content="Windows XP, página inicial, ícones, barra de tarefas, design retro" />
+  <meta name="author" content="Martiniano Gomes Barros Cirqueira Neto" />
+  <meta name="description"
+    content="Página inicial inspirada no Windows XP, com ícones clássicos e uma barra de tarefas estilizada." />
+
+  <link rel="shortcut icon" href="./Assets/Images/Windows_logo.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="https://unpkg.com/xp.css">
+  <link rel="stylesheet" href="Styles/index.css" />
+
+  <title>Projects - Initial Page</title>
+</head>
+
+<!-- Image starter icon: https://cdn-icons-png.flaticon.com/512/732/732221.png -->
+<!-- Pack de temas do Windows XP: https://botoxparty.github.io/XP.css/#title-bar -->
+<!-- Code Pen windows XP: https://codepen.io/tag/windows-xp -->
+<!-- Windows 95 Theme: https://codepen.io/gabriellewee/pen/MWqRZzp -->
+<!-- Windows XP Desktop (Código baseado neste tema da área de trabalho): https://codepen.io/tdcosta100/pen/VNjWqJ -->
+<!-- https://winxp.vercel.app/ -->
+<!-- https://98.js.org/ -->
+<!-- https://www.windows93.net/ -->
+
+<body>
+  <!-- Estilização da Àrea de Trabalho -->
+  <div class="desktop">
+    <!-- Icones Area de Trabalho -->
+    <div class="desktop-icon" data-window="computer" style="top: 20px; left: 20px;">
+      <img src="./Assets/Icons/mycomputaria.ico" alt="Meu Computador">
+      <span>Meu Computador</span>
+    </div>
+
+    <!-- Janela de Projetos -->
+    <div id="myWindow" class="window">
+      <div class="title-bar">
+        <div class="title-bar-text">Projetos</div>
+
+        <div class="title-bar-controls">
+          <button aria-label="Minimize"></button>
+          <button aria-label="Maximize"></button>
+          <button aria-label="Close"></button>
+        </div>
+      </div>
+
+      <div class="window-body">
+        <h1>Projetos - Desenvolvimento Web I</h1>
+
+        <div class="projects">
+          <div class="card-project">
+            <img src="" alt="Imagem do projeto.">
+            <h2>Receita - Cupcake</h2>
+            <div class="info">
+              <p>Receita simples de como fazer um bom Cupcake.</p>
+              <p>Para acessar o projeto, clique <a href="">aqui</a>.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Estilização da Barra de Tarefas -->
+  <div class="taskbar">
+    <div class="start-button">
+      <img src="./Assets/Images/Windows_logo.png" alt="Iniciar">
+      <p>Iniciar</p>
+    </div>
+
+    <div class="content">
+      <div class="clock">01:52</div>
+    </div>
+  </div>
+
+  <script src="Javascript/dragAnimation.js"></script>
+</body>
+
+</html>

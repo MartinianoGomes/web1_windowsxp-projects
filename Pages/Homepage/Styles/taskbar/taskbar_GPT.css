@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url('https://upload.wikimedia.org/wikipedia/en/2/24/Bliss_%28Windows_XP%29.png') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Tahoma, sans-serif;
+}
+
+.taskbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 48px;
+    background: linear-gradient(to top, #0c3c7c 0%, #1c5ebc 40%, #3c79e0 100%);
+    border-top: 2px solid #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: inset 0 1px #fff;
+    z-index: 1000;
+}
+
+.start-button {
+    background: linear-gradient(to bottom, #3bd14b 0%, #1a6f25 100%);
+    border: 1px solid #004400;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    padding: 4px 14px 4px 10px;
+    margin-left: 8px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: inset 0 1px #8fffa3;
+}
+
+.start-button img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.open-windows {
+    display: flex;
+    flex: 1;
+    margin-left: 10px;
+}
+
+.taskbar-item {
+    background: linear-gradient(to bottom, #cfe5fc, #a3c2f0);
+    border: 1px solid #7f9db9;
+    padding: 3px 12px;
+    margin-right: 4px;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    box-shadow: inset 0 1px white;
+    color: black;
+}
+
+.taskbar-clock {
+    color: white;
+    font-size: 14px;
+    margin-right: 15px;
+}
