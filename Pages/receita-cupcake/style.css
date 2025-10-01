@@ -1,0 +1,99 @@
+@font-face {
+    font-family: 'Alice';
+    src: url('fonts/Alice-Regular.ttf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Alice', serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin: 2%;
+}
+
+.background {
+    height: 100dvh;
+    width: 100dvw;
+
+    z-index: -1;
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    background-image: url(assets/main-image.svg);
+    background-repeat: no-repeat;
+
+    background-position: center top;
+    background-size: cover;
+
+    filter: blur(10px);
+    box-shadow: inset 0 0 150px rgba(0, 0, 0, 0.5);
+}
+
+.container {
+    max-width: 800px;
+    max-height: 1440px;
+
+    padding: 24px;
+
+    background-color: #F0E8C2;
+    border-radius: 24px;
+}
+
+.container picture img {
+    width: 800px;
+    max-height: 500px;
+
+    margin-bottom: 20px;
+
+    border-radius: 16px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    margin: 20px;
+    margin-bottom: 30px;
+}
+
+.content .info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info .info1, .info3, .textos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.info2 ul li {
+    list-style-position: inside;
+    margin-inline-start: 10px;
+    margin-block: 10px;
+}
+
+.rodape {
+    color: #F0E8C2;
+
+    display: flex;
+}
+
+.rodape p img {
+    width: 15px;
+
+    margin-top: 20px;
+}
