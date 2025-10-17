@@ -1,0 +1,15 @@
+main {
+    margin-block: 24px;
+}
+
+main .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    gap: 24px;
+}
+
+main .gallery img {
+    width: 286px;
+}

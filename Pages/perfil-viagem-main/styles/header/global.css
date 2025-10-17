@@ -1,0 +1,6 @@
+header {
+    background-color: var(--surface-color);
+
+    padding-block-start: 20px;
+    padding-block-end: 32px;
+}

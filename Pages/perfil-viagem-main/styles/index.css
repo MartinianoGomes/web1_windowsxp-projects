@@ -1,0 +1,10 @@
+@import url('global/global.css');
+
+@import url('header/nav.css');
+@import url('header/global.css');
+@import url('header/about.css');
+
+@import url('main/gallery.css');
+
+@import url('footer/global.css');
+@import url('footer/menu.css');

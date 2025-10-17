@@ -1,0 +1,10 @@
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding-block: 24px;
+
+    color: var(--text-color-secondary);
+    font: var(--paragraph-sm);
+}
