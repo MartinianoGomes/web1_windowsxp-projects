@@ -3,8 +3,11 @@
     flex-direction: column;
     gap: 2vw;
 
-
     margin-inline: 2%;
+}
+
+.window-body-info {
+    position: sticky;
 }
 
 .window-body h1 {
@@ -16,6 +19,13 @@
 
 
 
+
+.projects {
+    height: 440px;
+    overflow: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
 
 /* Estilização dos cards */
 .card-project h1 {
