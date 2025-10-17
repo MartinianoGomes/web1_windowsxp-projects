@@ -27,6 +27,25 @@
 }
 
 body {
-	background: url('../Assets/Images/homepage.jpg') no-repeat center center fixed;
+	background: none;
+}
+
+.background-fixed {
+	/* Define o posicionamento fixo em relação à tela */
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+
+	/* Define o background e o posiciona atrás do conteúdo */
+	z-index: -1;
+	/* Coloca o elemento atrás de todo o resto */
+
+	background: url('../Assets/Images/homepage.jpg');
 	background-size: cover;
+	background-repeat: no-repeat;
+
+	/* Garante que o centro da imagem fique centralizado */
+	background-position: center center;
 }
