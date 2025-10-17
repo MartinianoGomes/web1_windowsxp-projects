@@ -1,0 +1,40 @@
+.services {
+    background-color: var(--gray-100);
+}
+
+
+.services .center .header {
+    margin-block-start: 88px;
+}
+
+
+.services .grid {
+    display: grid;
+    /* flex-wrap: wrap; */
+    gap: 24px;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    margin-block-end: 122px;
+}
+
+.services .grid .card {
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+
+    max-width: 330px;
+    max-height: 280px;
+
+    background-color: var(--gray-100);
+
+    padding: 12px;
+
+    border-radius: 12px;
+    border: 2px solid var(--gray-200);
+}
+
+.services .grid .card img {
+    width: 45px;
+    height: 35px;
+}
