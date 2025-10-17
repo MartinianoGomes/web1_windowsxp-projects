@@ -1,0 +1,50 @@
+.form-header {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.back-button {
+    display: flex;
+    align-items: center;
+    width: 80px;
+    height: 24px;
+    gap: 8px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    color: var(--text-tertiary);
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+
+.back-button img {
+    width: 24px;
+    height: 24px;
+}
+
+.header-text h1 {
+    height: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 125%;
+    color: var(--text-primary);
+    margin-bottom: 12px;
+}
+
+.header-text p {
+    height: 48px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--text-secondary);
+    margin: 0;
+}

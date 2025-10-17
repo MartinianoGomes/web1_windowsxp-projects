@@ -1,0 +1,50 @@
+/* Estilizações da parte DIREITA da página */
+.container-partedois-background {
+    display: flex;
+    position: sticky;
+    flex-direction: column;
+    top: 0;
+
+    width: 50vw;
+    height: 100vh;
+
+    padding: 64px;
+
+    background-color: var(--surface-secondary);
+}
+
+.container-partedois-content {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--surface-secondary);
+}
+
+#align-image-1 {
+    width: 200px;
+    height: 32px;
+
+    margin-bottom: 8px;
+}
+
+.container-partedois-content h1 {
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.container-partedois-content h1 span {
+    color: var(--text-highlight);
+}
+
+.container-partedois-content p {
+    margin-top: 8px;
+    color: var(--text-secondary);
+}
+
+#align-image-2 {
+    width: 500px;
+    height: 360px;
+
+    margin-top: 32px;
+
+    align-self: center;
+}

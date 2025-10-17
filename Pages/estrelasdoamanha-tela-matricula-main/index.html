@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="styles/index.css" />
+
+    <title>Matrícula - Escola Estrelas do Amanhã</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="formulario-matricula-container">
+            <header class="form-header">
+                <button class="back-button">
+                    <img src="assets/arrow-left-02.svg" alt="Voltar" />
+                    <span>Voltar</span>
+                </button>
+
+                <div class="header-text">
+                    <h1>Formulário de matrícula</h1>
+                    <p>
+                        Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do
+                        Amanhã.
+                    </p>
+                </div>
+            </header>
+
+            <main class="main-container">
+                <form action="#" method="post" enctype="multipart/form-data">
+                    <h1>Informações da criança</h1>
+
+                    <div class="form-group">
+                        <label for="nome_crianca">Nome completo</label>
+                        <input type="text" id="nome_crianca" name="nome_crianca" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="nascimento_crianca">Data de nascimento</label>
+                        <div class="input-with-icon">
+                            <input type="date" id="nascimento_crianca" name="nascimento_crianca" required>
+                            <img src="assets/calendar-03.png" alt="Ícone de calendário" class="input-icon">
+                        </div>
+                    </div>
+
+                    <!-- Sexo (usando select) -->
+                    <div class="form-group">
+                        <label for="sexo_crianca">Sexo</label>
+                        <div class="input-with-icon">
+                            <select id="sexo_crianca" name="sexo_crianca" required>
+                                <option value="" disabled selected>Selecione</option>
+                                <option value="feminino">Feminino</option>
+                                <option value="masculino">Masculino</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                            <img src="assets/arrow-down-01.png" alt="Ícone de seta" class="input-icon">
+                        </div>
+                    </div>
+
+                    <div class="informacoes-medicas">
+                        <label>Informações médicas</label>
+                        <textarea name="info_crianca" rows="4" required></textarea>
+                    </div>
+
+                    <div class="upload-arquivo">
+                        <label for="certidao">Certidão de nascimento</label>
+
+                        <label for="certidao" class="upload-area">
+                            <img src="assets/cloud-upload.jpg" alt="Ícone de upload" />
+                            <span>Clique aqui para selecionar arquivos</span>
+                        </label>
+
+                        <input type="file" name="certidao" id="certidao" accept=".pdf,.jpg,.jpeg,.png" required hidden>
+                    </div>
+
+                    <div class="endereco">
+                        <h2>Endereço residencial</h2>
+
+                        <label>CEP
+                            <input type="text" name="cep" required />
+                        </label>
+
+                        <div class="linha">
+                            <label>Rua
+                                <input type="text" name="rua" required />
+                            </label>
+
+                            <label>Número
+                                <input type="text" name="numero" required />
+                            </label>
+                        </div>
+
+                        <div class="linha">
+                            <label>Cidade
+                                <input type="text" name="cidade" required />
+                            </label>
+
+                            <label>Estado
+                                <input type="text" name="estado" required />
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h2>Informações do responsável</h2>
+
+                        <div class="form-group">
+                            <label for="nome_responsavel">Nome do responsável</label>
+                            <input type="text" id="nome_responsavel" name="nome_responsavel" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="descricao">Principal responsável legal e contato de emergência</label>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="telefone_responsavel">Telefone</label>
+                            <input type="tel" id="telefone_responsavel" name="telefone_responsavel" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email_responsavel">E-mail</label>
+                            <input type="email" id="email_responsavel" name="email_responsavel" required>
+                            <span class="error-message" id="email-error"><img src="assets/alert-circle.svg" alt="Erro"> Insira um e-mail válido</span>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h2>Opções de matrícula</h2>
+
+                        <p>Selecione o turno de estudo</p>
+                        <div class="option-grid">
+                            <label class="card-option card-option1">
+                                <input type="radio" name="turno" value="manha" required>
+                                <img src="assets/sun-cloud-02.png" alt="Ícone manhã">
+                                <span>Manhã</span>
+                            </label>
+
+                            <label class="card-option card-option1">
+                                <input type="radio" name="turno" value="tarde">
+                                <img src="assets/sun-02.png" alt="Ícone tarde">
+                                <span>Tarde</span>
+                            </label>
+                        </div>
+
+                        <p>Em qual esporte você gostaria de inscrever seu filho?</p>
+
+                        <div class="option-grid option-grid2">
+                            <label class="card-option card-option2">
+                                <input type="radio" name="esportes[]" value="futebol">
+                                <img src="assets/football.png" alt="Futebol">
+                                <span>Futebol</span>
+                            </label>
+
+                            <label class="card-option card-option2">
+                                <input type="radio" name="esportes[]" value="basquete">
+                                <img src="assets/basketball-02.png" alt="Basquete">
+                                <span>Basquete</span>
+                            </label>
+
+                            <label class="card-option card-option2">
+                                <input type="radio" name="esportes[]" value="natacao">
+                                <img src="assets/swimming.png" alt="Natação">
+                                <span>Natação</span>
+                            </label>
+
+                            <label class="card-option card-option2">
+                                <input type="radio" name="esportes[]" value="yoga">
+                                <img src="assets/yoga-02.png" alt="Yoga">
+                                <span>Yoga</span>
+                            </label>
+
+                            <label class="card-option card-option2">
+                                <input type="radio" name="esportes[]" value="volei1">
+                                <img src="assets/volleyball.png" alt="Vôlei">
+                                <span>Volley</span>
+                            </label>
+
+                            <label class="card-option card-option2">
+                                <input type="radio" name="esportes[]" value="volei2">
+                                <img src="assets/boxing-glove-01.png" alt="Luta">
+                                <span>Volley</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-section termos">
+                        <label class="checkbox-custom">
+                            <input type="checkbox" name="termos" required>
+                            <span class="checkmark">Declaro que li e concordo com os <a href="#" target="_blank">Termos e Condições</a> e com a <a href="#" target="_blank">Política de Privacidade</a> da escola Estrelas do Amanhã.</span>
+                        </label>
+
+                        <div class="botoes-final">
+                            <button type="button" class="btn-outline">Salvar respostas</button>
+                            <button type="submit" class="btn-solid">Fazer matrícula</button>
+                        </div>
+                    </div>
+                </form>
+            </main>
+        </div>
+
+        <div class="container-partedois-background">
+            <div class="container-partedois-content">
+                <img id="align-image-1" src="assets/logo-parte-2-info.svg" alt="Logo">
+
+                <h1>Porque cada momento de <span>aprendizado</span> conta</h1>
+
+                <p>Increva seu filho em nossa escola e veja-o florescer em um ambiente acolhedor, seguro e estimulante.
+                </p>
+
+                <img id="align-image-2" src="assets/pana.svg" alt="Imagem de crianças aprendendo.">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

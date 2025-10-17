@@ -1,0 +1,21 @@
+/* Estilizações da parte ESQUERDA da página */
+.formulario-matricula-container {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    padding: 64px;
+    background-color: var(--surface-primary);
+}
+
+.back-button {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 40px;
+    color: var(--text-tertiary);
+    text-decoration: none;
+    border: none;
+    gap: 8px;
+    background-color: white;
+    font-size: var(--heading4);
+}

@@ -1,0 +1,18 @@
+/* 
+
+Este arquivo será responsável por importar as estilizações de todos os elementos da página.
+
+Desta forma, o código CSS ficará mais organizado e fácil de manter.
+
+No arquivo index.html, o arquivo CSS será importado da seguinte forma:
+<link rel="stylesheet" href="styles/index.css">
+
+*/
+
+@import url(global.css);
+@import url(header.css);
+@import url(main.css);
+@import url(footer.css);
+@import url(left.css);
+@import url(right.css);
+@import url(form.css);

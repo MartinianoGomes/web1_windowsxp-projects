@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Comic+Relief:wght@400;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --brand-light: #F67841;
+    --brand-mid: #F3541C;
+    --brand-dark: #E43A12;
+
+    --text-primary: #292524;
+    --text-secondary: #57534E;
+    --text-tertiary: #8F8881;
+    --text-highlight: #E43A12;
+
+    --surface-primary: #FFFFFF;
+    --surface-secondary: #FEE7D6;
+    --surface-disabled: #E7E5E4;
+
+    --stroke-default: #D6D3D1;
+    --stroke-highlight: #F3541C;
+
+    --semantic-error: #DC2626;
+
+    --orange: #F9A474;
+    --yellow: #FEDF6F;
+    --green: #C7D78D;
+    --blue: #B8CEDC;
+    --violet: #C3B2E7;
+    --pink: #F682A5;
+
+    --font-family: 'Poppins', sans-serif;
+    
+    --heading1: 32px/120% bold var(--font-family);
+    --heading2: 24px/120% bold var(--font-family);
+    --heading3: 20px/120% bold var(--font-family);
+    --heading4: 16px/120% bold var(--font-family);
+}
+
+body {
+    font-family: var(--font-family);
+    color: var(--text-primary);
+}
+
+.container {
+    display: flex;
+    width: 100vw;
+}
