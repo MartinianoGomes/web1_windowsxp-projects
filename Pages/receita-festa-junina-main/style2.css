@@ -1,0 +1,223 @@
+/* Estilizações gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Estilização do Main */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Alinha o conteúdo ao topo */
+    width: 100%;
+    min-height: 100vh; /* Garante que o conteúdo ocupe toda a altura da tela */
+    padding: 20px;
+}
+
+/* Estilização da parte de cima da página */
+.top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    height: 300px;
+    width: 100%;
+    padding-block: 50px;
+    background-color: #feece0;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra para dar destaque */
+}
+
+.pamonha {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px; /* Arredonda as bordas da imagem */
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #555; /* Cor mais suave para o texto */
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.buttons button {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.buttons button:hover {
+    background-color: #ffcb77;
+    border-color: #ffcb77;
+}
+
+.buttons button img {
+    width: 20px;
+    height: 20px;
+}
+
+#contador {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Estilização da parte de baixo da página */
+.bottom {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start; /* Alinha o conteúdo no topo da section */
+    justify-content: center;
+    background-color: #9B6647;
+    color: white;
+    gap: 100px;
+    width: 100%;
+    padding-block: 80px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.colgeral {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.titulo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.icon-titulo {
+    width: 25px;
+    height: 25px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+ul,
+ol {
+    list-style: none;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+ul li,
+ol li {
+    margin-bottom: 10px;
+}
+
+ul li::before {
+    content: "•";
+    margin-right: 10px;
+    color: #fff;
+}
+
+ol li::before {
+    content: counter(list-item) ". ";
+    margin-right: 10px;
+    color: #fff;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    .top {
+        flex-direction: column;
+        padding-block: 20px;
+    }
+
+    .pamonha {
+        max-width: 250px;
+    }
+
+    .bottom {
+        flex-direction: column;
+        gap: 50px;
+        padding-block: 40px;
+    }
+
+    .col1, .col2 {
+        width: 100%;
+    }
+
+    .titulo h2 {
+        font-size: 1.3rem;
+    }
+
+    .icon-titulo {
+        width: 20px;
+        height: 20px;
+    }
+
+    .buttons {
+        gap: 10px;
+    }
+
+    #contador {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .top {
+        gap: 20px;
+        padding-block: 15px;
+    }
+
+    .pamonha {
+        max-width: 200px;
+    }
+
+    .buttons button {
+        padding: 8px;
+    }
+
+    #contador {
+        font-size: 1.2rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+}

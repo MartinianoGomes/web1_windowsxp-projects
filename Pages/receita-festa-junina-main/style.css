@@ -1,0 +1,125 @@
+/* Estilizações gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+
+/* Estilização da paarte de cima da página */
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 50vh;
+    width: 100%;
+
+    background-color: #feece0;
+}
+
+.top-inside {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 56px;
+
+    height: 50vh;
+    width: 60%;
+    padding-block: 50px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    gap: 20px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    gap: 20px;
+}
+
+.buttons button {
+    border: none;
+    cursor: pointer;
+}
+
+.pamonha {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+
+
+
+/* Estilização da parte de baixo da página */
+.bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #9B6647;
+    color: white;
+
+    width: 100%;
+}
+
+.bottom-inside {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 50px;
+
+    height: 50vh;
+    width: 60%;
+}
+
+ul, ol {
+    list-style-position: inside;
+}
+
+.colgeral {
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+.titulo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    gap: 10px;
+}
+
+.icon-titulo {
+    width: 25px;
+    height: 25px;
+}
