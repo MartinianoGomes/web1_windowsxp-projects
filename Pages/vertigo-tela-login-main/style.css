@@ -1,0 +1,138 @@
+/* Estilizações globais */
+@font-face {
+    font-family: "Tittilium Web";
+    src: url(fonts/Titillium_Web/TitilliumWeb-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: "Tittilium Web";
+}
+
+
+
+/* Estilizações da página */
+.flex {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 100dvh;
+}
+
+.primeiraparte {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 50px;
+}
+
+.headline h1 {
+    margin-block-end: 10px;
+}
+
+.primeiraparte main {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+}
+
+.input label {
+    font-weight: bold;
+}
+
+.label-flex {
+    display: flex;
+    justify-content: space-between;
+
+    margin-block-end: 5px;
+}
+
+.label-flex label {
+    font-weight: bold;
+}
+
+.label-flex a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.input input {
+    border: 1px solid #E2E8F0;
+    border-radius: 4px;
+    
+    color: #FFFFFF;
+
+    padding: 16px 12px;
+}
+
+.input-email {
+    margin-block-end: 15px;
+}
+
+.input-senha {
+    display: flex;flex-direction: column;
+    justify-content: space-between;
+    border-radius: 4px;
+    margin-block-end: 25px;
+}
+
+.span {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 12px;
+    border: 1px solid #E2E8F0;
+    border-radius: 4px;
+}
+
+.span input {
+    border: none;
+    width: 100%;
+}
+
+.input img {
+    width: 20px;
+}
+
+.form-enviar {
+    padding-inline: 60px;
+    padding-block: 16px;
+
+    border-radius: 4px;
+    border: none;
+
+    margin-block-end: 25px;
+
+    background-color: #7C3AED;
+    color: white;
+    
+    font-weight: bold;
+
+    width: 100%;
+}
+
+.create-account {
+    display: flex;
+    gap: 3px;
+}
+
+.create-account a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+
+/* Estilizações da Segunda Parte da página */
+.segundaparte {
+    background-image: url(assets/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}

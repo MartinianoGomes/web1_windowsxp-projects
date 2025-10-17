@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Vertigo - Login</title>
+</head>
+<body>
+    <div id="page" class="flex">
+        <div class="primeiraparte">
+            <header>
+                <img src="assets/logo.svg" alt="Logo da empresa.">
+            </header>
+    
+            <main>
+                <div class="headline">
+                    <h1>Acesse a plataforma</h1>
+    
+                    <p>Faça login ou registre-se para começar a construir seus projetos ainda hoje.</p>
+                </div>
+    
+                <form action="">
+                    <div class="input input-email">
+                        <label for="email" class="label-flex">E-mail</label>
+                        <input
+                            type="email"
+                            name="email"
+                            id="email"
+                            placeholder="Digite seu e-mail"
+                        >
+                    </div>
+    
+                    <div class="input-senha">
+                        <div class="label-flex">
+                            <label for="senha">Senha</label>
+                            <a href="">Esqueceu a senha?</a>
+                        </div>
+    
+                        <div class="span">
+                            <input
+                                type="password"
+                                name="senha"
+                                id="senha"
+                                placeholder="Digite sua senha"
+                            >
+        
+                            <img
+                                src="assets/eye.svg"
+                                alt="Mostrar senha"
+                                onclick=""
+                            >
+                        </div>
+                    </div>
+    
+                    <input
+                        class="form-enviar"
+                        type="submit"
+                        value="Entrar"
+                    >
+    
+                    <div class="create-account">
+                        <p>Ainda não tem uma conta?</p>
+                        <a href="">Increva-se</a>
+                    </div>
+                </form>
+            </main>
+        </div>
+
+        <div class="segundaparte"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
